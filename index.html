@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tre-en-en® - Compléments alimentaires énergétiques à Lomé, Togo. Retrouvez votre énergie naturellement.">
+    <meta name="keywords" content="compléments alimentaires, énergie, Lomé, Togo, Tre-en-en">
+    <meta name="author" content="Tre-en-en Lomé">
+    
+    <title>Tre-en-en® | Énergie & Vitalité à Lomé</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-brand">
+                <h1>🌿 Tre-en-en®</h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#temoignages">Témoignages</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ACCUEIL / HERO -->
+    <section id="accueil" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Retrouvez votre énergie naturellement</h2>
+                <p>Tre-en-en® : La solution énergétique naturelle pour une vie plus dynamique à Lomé</p>
+                <button class="btn-primary" onclick="scrollToSection('temoignages')">Découvrir les témoignages</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- TÉMOIGNAGES -->
+    <section id="temoignages" style="background:#eef4ec">
+        <div class="container">
+            <h2>Plus d'énergie, enfin. 🙌</h2>
+            <p class="sous">Ce que nos clients rapportent après leur cure de Tre-en-en® à Lomé.</p>
+            <div class="grid">
+                <div class="temoignage">
+                    <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=160&h=160&fit=crop&crop=faces" alt="Aïcha M.">
+                    <div class="etoiles">★★★★★</div>
+                    <p>« Avant, à 15h je ne tenais plus debout. Après 1 mois de cure, je travaille toute la journée et le soir je suis encore en forme pour mes enfants. »</p>
+                    <strong>Aïcha M. — Tokoin, Lomé</strong>
+                </div>
+                <div class="temoignage">
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=160&h=160&fit=crop&crop=faces" alt="Kossi A.">
+                    <div class="etoiles">★★★★★</div>
+                    <p>« Mon appétit est revenu et la fatigue constante a disparu. Même après le travail, je reste actif. Je recommande aux hommes de mon âge. »</p>
+                    <strong>Kossi A. — Colombe de la Paix</strong>
+                </div>
+                <div class="temoignage">
+                    <img src="https://images.unsplash.com/photo-1589156280159-27698a70f29e?w=160&h=160&fit=crop&crop=faces" alt="Ama D.">
+                    <div class="etoiles">★★★★★</div>
+                    <p>« Mes enfants et mon mari en prennent. Moins de maladies cette saison, et je le vois sur leur énergie à l'école. Merci Junior. »</p>
+                    <strong>Ama D. — Adidogomé, Lomé</strong>
+                </div>
+                <div class="temoignage">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=160&h=160&fit=crop&crop=faces" alt="Yao K.">
+                    <div class="etoiles">★★★★★</div>
+                    <p>« J'étais sceptique au début. Au bout de 3 semaines, différence nette : réveil en forme, plus de concentration au bureau. »</p>
+                    <strong>Yao K. — Bè, Lomé</strong>
+                </div>
+            </div>
+            <p style="text-align:center;margin-top:16px;font-size:.7rem;color:#9aa8a0">Photos d'illustration — témoignages d'expérience clients compléments alimentaires.</p>
+        </div>
+    </section>
+
+    <!-- AVANTAGES -->
+    <section id="apropos" class="avantages">
+        <div class="container">
+            <h2>Pourquoi Tre-en-en® ?</h2>
+            <div class="grid-3">
+                <div class="card">
+                    <div class="icon">💪</div>
+                    <h3>100% Naturel</h3>
+                    <p>Formule à base d'ingrédients naturels sélectionnés pour leur efficacité.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">⚡</div>
+                    <h3>Résultats Rapides</h3>
+                    <p>Ressentez les effets en 3 à 4 semaines de cure régulière.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🏥</div>
+                    <h3>Sans Danger</h3>
+                    <p>Formule testée et approuvée, sans effets secondaires connus.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Nous Contacter</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p><strong>📍 Adresse :</strong> Lomé, Togo</p>
+                    <p><strong>📞 Téléphone :</strong> +228 XXXXXXXX</p>
+                    <p><strong>📧 Email :</strong> junioradamja9527610@gmail.com</p>
+                </div>
+                <form class="contact-form" onsubmit="handleSubmit(event)">
+                    <input type="text" placeholder="Votre nom" required>
+                    <input type="email" placeholder="Votre email" required>
+                    <textarea placeholder="Votre message" rows="5" required></textarea>
+                    <button type="submit" class="btn-primary">Envoyer</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Tre-en-en® | Tous droits réservés | <a href="#">Politique de confidentialité</a></p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem;">📧 Nous contacter : junioradamja9527610@gmail.com</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
