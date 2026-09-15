@@ -1,0 +1,25 @@
+# Système d'exploitation
+.DS_Store
+Thumbs.db
+
+# IDE et éditeurs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+
+# Node (si vous utilisez npm/yarn)
+node_modules/
+package-lock.json
+yarn.lock
+
+# Fichiers temporaires
+*.temp
+*.tmp
+*.log
+
+# Environnement
+.env
+.env.local
