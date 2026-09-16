@@ -6,6 +6,8 @@
     --couleur-text: #1b4332;
     --couleur-light: #d8f3dc;
     --couleur-border: #b7e4c7;
+    --couleur-whatsapp: #25d366;
+    --couleur-call: #0084ff;
 }
 
 /* RESET */
@@ -90,6 +92,13 @@ body {
     animation: fadeInUp 1s ease 0.2s both;
 }
 
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 /* BUTTONS */
 .btn-primary {
     background: white;
@@ -102,11 +111,117 @@ body {
     font-size: 1rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     animation: fadeInUp 1s ease 0.4s both;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .btn-primary:hover {
     transform: translateY(-3px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-whatsapp {
+    background: var(--couleur-whatsapp);
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    animation: fadeInUp 1s ease 0.5s both;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-whatsapp:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+}
+
+.btn-call {
+    background: var(--couleur-call);
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-call:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 132, 255, 0.4);
+}
+
+/* SECTION PRODUIT */
+.produit {
+    padding: 4rem 20px;
+    background: #f9f9f9;
+}
+
+.produit h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: var(--couleur-primaire);
+}
+
+.produit-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.produit-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.produit-info h3 {
+    color: var(--couleur-primaire);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.produit-info p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.benefits {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.benefit-icon {
+    font-size: 2rem;
+}
+
+.contact-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
 }
 
 /* SECTIONS */
@@ -237,6 +352,16 @@ section h2 {
     font-size: 1.1rem;
 }
 
+.contact-info a {
+    color: var(--couleur-primaire);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
 .contact-form {
     display: flex;
     flex-direction: column;
@@ -265,6 +390,11 @@ section h2 {
     color: white;
     text-align: center;
     padding: 2rem;
+}
+
+.footer-contact {
+    margin-top: 1rem;
+    font-size: 0.9rem;
 }
 
 .footer a {
@@ -320,8 +450,20 @@ section h2 {
         font-size: 1rem;
     }
 
+    .hero-buttons {
+        flex-direction: column;
+    }
+
     section h2 {
         font-size: 2rem;
+    }
+
+    .produit-content {
+        grid-template-columns: 1fr;
+    }
+
+    .benefits {
+        grid-template-columns: 1fr;
     }
 
     .contact-content {
@@ -331,6 +473,10 @@ section h2 {
     .grid,
     .grid-3 {
         grid-template-columns: 1fr;
+    }
+
+    .contact-buttons {
+        flex-direction: column;
     }
 }
 
@@ -357,5 +503,10 @@ section h2 {
 
     .nav-menu {
         gap: 0.3rem;
+    }
+
+    .btn-primary, .btn-whatsapp, .btn-call {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.9rem;
     }
 }
